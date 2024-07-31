@@ -1,0 +1,6 @@
+{"user_id":1,"name":"Aarav Patel","latitude":"18.602288688693122","longitude":"72.6075518864525"}
+{"user_id":2,"name":"Vivaan Sharma","latitude":"18.602594091767223","longitude":"72.60806520318829"}
+{"user_id":3,"name":"Aditya Mehra","latitude":"18.59385620790292","longitude":"72.60969846104362"}
+{"user_id":4,"name":"Vihaan Iyer","latitude":"18.592086969743228","longitude":"72.62191518797307"}
+{"user_id":5,"name":"Arjun Nair","latitude":"18.593468648143574","longitude":"72.61915990502989"}
+{"user_id":6,"name":"Sai Prasad","latitude":"18.60300546907289","longitude":"72.61185171144383"}
