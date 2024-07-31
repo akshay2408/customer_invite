@@ -3,7 +3,7 @@ class CustomersController < ApplicationController
   def index
     if params[:file].present?
       file = params[:file].read
-      @customers = CustomerInviter.call(file)
+      @customers = CustomerInviterService.call(file)
       render json: @customers, status: :ok
     else
       render json: { error: 'File not provided' }, status: :unprocessable_entity
