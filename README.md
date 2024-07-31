@@ -1,24 +1,12 @@
-# README
+# Customer Inviter API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup Instructions
 
-Things you may want to cover:
+1. Clone the repository
+2. Install dependencies: `bundle install`
+3. Run the server: `rails server`
+4. Run tests: `bundle rspec spec`
 
-* Ruby version
+## API Documentation
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See `api_documentation.md` for detailed API documentation.
