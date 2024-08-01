@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe CustomersController, type: :controller do
-  describe 'POST #index' do
+  describe 'POST #process_customers' do
     let(:file) do
       fixture_file_upload('files/customers.txt', 'text/plain')
     end
@@ -17,12 +17,12 @@ RSpec.describe CustomersController, type: :controller do
 
     context 'with valid file' do
       it 'returns http success' do
-        post :index, params: { file: file }
+        post :process_customers, params: { file: file }
         expect(response).to have_http_status(:ok)
       end
 
       it 'returns the correct customers' do
-        post :index, params: { file: file }
+        post :process_customers, params: { file: file }
         json_response = JSON.parse(response.body)
         expect(json_response).to eq([
           { 'user_id' => 1, 'name' => 'Aarav Patel' },
@@ -34,12 +34,12 @@ RSpec.describe CustomersController, type: :controller do
 
     context 'without file' do
       it 'returns http unprocessable entity' do
-        post :index
+        post :process_customers
         expect(response).to have_http_status(:unprocessable_entity)
       end
 
       it 'returns an error message' do
-        post :index
+        post :process_customers
         json_response = JSON.parse(response.body)
         expect(json_response['error']).to eq('File not provided')
       end

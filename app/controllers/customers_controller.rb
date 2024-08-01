@@ -1,6 +1,6 @@
 # app/controllers/customers_controller.rb
 class CustomersController < ApplicationController
-  def index
+  def process_customers
     if params[:file].present?
       file = params[:file].read
       @customers = CustomerInviterService.call(file)

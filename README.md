@@ -52,10 +52,6 @@ This is a Ruby on Rails API that processes customer data from a JSON lines file 
 
 You can use tools like curl or Postman to upload the file.
 
-Example using curl:
-
-curl -X POST -F "file=@path/to/customers.txt" http://localhost:3000/customers
-
 3. **Response:**
 
 The API will return a JSON array of customers within 100km of the Mumbai office, sorted by user ID.
